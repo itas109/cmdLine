@@ -1,0 +1,13 @@
+#include "stdafx.h"
+#include "cmdLine.h"
+#include <string>
+#include <iostream>
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	std::string result;
+	cmdLine mtmCmd;
+	result = mtmCmd.runCmd(std::string("ipconfig /all"));
+	std::cout << result << std::endl;
+	return 0;
+}
